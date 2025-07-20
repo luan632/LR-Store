@@ -65,6 +65,7 @@ header nav ul li:hover::after{
     overflow: hidden;
 }
 
+
 .container::before {
     content: '';
     width: 500px;
@@ -123,7 +124,7 @@ header nav ul li:hover::after{
 }
 
 .product-img img{
-    max-width: 80%;
+    max-width: 150%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
 }
@@ -172,3 +173,100 @@ header nav ul li:hover::after{
     cursor: pointer;
     border: none;
 }
+
+.arrows {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.arrow-btn:hover {
+    background-color: rgba(0, 247, 255, 0.2);
+    border-radius: #00f7ff;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform:translateX(-50%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 5;
+}
+
+.numbers {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.dot.active {
+    background-color: #00f7ff;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.tech-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 100px solid rgba(0, 247, 255, 0.1);
+}
+
+.circle:nth-child(1){
+    width: 200px;
+    width: 200px;
+    top: 10%;
+    left: 10%;
+}
+
+.circle:nth-child(2){
+    width: 200px;
+    width: 200px;
+    top: 60%;
+    left: 80%;
+}
+
+.circle:nth-child(3){
+    width: 150px;
+    width: 150px;
+    top: 70%;
+    left: 20%;
+} 
